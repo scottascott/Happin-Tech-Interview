@@ -6,7 +6,7 @@ You, as a developer of Happin, will be working collaboratively with your team on
 
 As a fullstack developer, you will also build a React UI to allow user submit the URL in a form, to the backend API, and display the responses to the user. (Please feel free to either create a React app in this repo or in a separate repo.)
 
-The code is self-explaining, but there could be bugs & poor practices. Please try your best to understand the code, fix any bugs you have found, and implement the feature.
+The code is self-explaining, but there could be bugs & poor practices. Please try your best to understand the code, fix any bugs you have found, enhance it with best practices you know and implement the feature.
 
 Please make sure first to start up the application on your local. As an acceptance criteria, the application should be able to start on any machine. Please provide the instruction on how it should be setup.
 
