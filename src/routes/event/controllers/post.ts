@@ -8,7 +8,7 @@ export const crawl = async (
 ) => {
   try {
     const eventService = req.scope.cradle.eventService as EventService;
-    const result = eventService.crawl(req.body.url);
+    const result = await eventService.crawl(req.body.url); //here should be an await
     return res.json({ statusCode: 200, data: { ...result } });
   } catch (err) {
     return next(err);

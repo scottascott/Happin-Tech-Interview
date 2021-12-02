@@ -1,10 +1,13 @@
-import express, { NextFunction, Request, Response } from "express";
+import express from 'express';
+import cors from "cors";
+import { NextFunction, Request, Response } from "express";
 import { json, urlencoded } from "body-parser";
 import container from "./container";
 import { router as eventsRouter } from "./routes/event/routes";
 
 const app = express();
 app.enable("trust proxy");
+app.use(cors());
 
 // to parse: application/json
 app.use(json({ limit: "50mb" }));
@@ -13,6 +16,7 @@ app.use(urlencoded({ limit: "50mb", extended: true }));
 
 app.use((req: Request, _: Response, next: NextFunction) => {
   req.scope = container.createScope();
+  next(); //here should have a next
 });
 
 app.use(`/events`, eventsRouter);
@@ -25,4 +29,6 @@ app.use((err: any, req: Request, res: Response, next: NextFunction) => {
   return res.status(400).json({ message: err.message });
 });
 
+
 app.listen(4200);
+

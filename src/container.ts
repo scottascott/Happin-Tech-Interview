@@ -9,9 +9,8 @@ declare global {
   }
 }
 const container = createContainer();
-
 container.register({
-  eventsService: asClass(EventService),
+  eventService: asClass(EventService),
 });
 
 export default container;

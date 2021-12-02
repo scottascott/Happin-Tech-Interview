@@ -1,0 +1,11 @@
+.event{
+    padding: 50px;
+}
+
+.ant-descriptions-view{
+    background: white;
+}
+
+.ant-descriptions-bordered .ant-descriptions-item-label{
+    background: #A9A9A9;
+}
