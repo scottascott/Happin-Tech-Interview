@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Interview for Happin Developer Position",
   "main": "index.ts",
-  "author": "Bob Cui",
+  "author": "Scott Wang",
   "license": "MIT",
   "dependencies": {
     "antd": "^4.17.2",

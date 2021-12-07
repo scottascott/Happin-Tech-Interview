@@ -1,0 +1,17 @@
+1,Setup server:
+	(1),use cmd and go to root folder Happin-Tech-Interview-Scott
+	(2),run: npm install
+	(3),cd src
+	(4),npx tsc index.ts
+
+2,Setup client:
+	(1),use cmd to go to Happin-Tech-Interview-Scott/client
+	(2),run: yarn install
+
+3,Start the server and client:
+	(1),under root folder/src, run: nodemon index.js
+	(2),under root folder/client:/src, run: yarn start
+
+4,Use the crawler:
+	(1),use web browser to go to: http://localhost:3000/
+	(2),follow the instruction in the main page to use the crawler
